@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人中心 — 南网在线</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="phone-frame">
+    <div class="status-bar"><span>9:41</span><span>⚡ 📶 📡</span></div>
+
+    <div class="phone-content" style="padding-bottom:100px;">
+      <!-- Profile Header -->
+      <div style="background:linear-gradient(135deg, #1a6dff 0%, #0052cc 100%);padding:24px 20px 40px;color:white;position:relative;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+          <div style="display:flex;gap:14px;align-items:center;">
+            <div style="width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;font-size:28px;">👤</div>
+            <div>
+              <div style="font-size:18px;font-weight:600;">李明</div>
+              <div style="font-size:13px;opacity:0.8;margin-top:2px;">已实名认证 ✓</div>
+            </div>
+          </div>
+          <div style="font-size:20px;cursor:pointer;">⚙️</div>
+        </div>
+
+        <!-- Account Stats -->
+        <div style="display:flex;margin-top:20px;background:rgba(255,255,255,0.1);border-radius:12px;padding:16px;">
+          <div style="flex:1;text-align:center;">
+            <div style="font-size:22px;font-weight:700;">3</div>
+            <div style="font-size:12px;opacity:0.8;">绑定户号</div>
+          </div>
+          <div style="width:1px;background:rgba(255,255,255,0.2);"></div>
+          <div style="flex:1;text-align:center;">
+            <div style="font-size:22px;font-weight:700;">12</div>
+            <div style="font-size:12px;opacity:0.8;">本月用电°</div>
+          </div>
+          <div style="width:1px;background:rgba(255,255,255,0.2);"></div>
+          <div style="flex:1;text-align:center;">
+            <div style="font-size:22px;font-weight:700;">VIP</div>
+            <div style="font-size:12px;opacity:0.8;">会员等级</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- My Accounts -->
+      <div class="card" style="margin-top:-20px;position:relative;z-index:1;">
+        <div class="card-title">我的户号</div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="padding:12px;background:#f0f5ff;border-radius:10px;border:1px solid #d6e4ff;cursor:pointer;">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <div>
+                <div style="font-size:14px;font-weight:500;">🏠 自住房（天河区）</div>
+                <div style="font-size:12px;color:var(--text-secondary);margin-top:2px;">户号: 0201****8765</div>
+              </div>
+              <span class="tag tag-success">余额¥186.50</span>
+            </div>
+          </div>
+          <div style="padding:12px;background:#f5f6fa;border-radius:10px;cursor:pointer;">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <div>
+                <div style="font-size:14px;font-weight:500;">🏢 出租房（番禺区）</div>
+                <div style="font-size:12px;color:var(--text-secondary);margin-top:2px;">户号: 0201****3210</div>
+              </div>
+              <span class="tag tag-warning">余额¥23.80</span>
+            </div>
+          </div>
+          <div style="padding:12px;background:#f5f6fa;border-radius:10px;cursor:pointer;">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <div>
+                <div style="font-size:14px;font-weight:500;">🏠 父母家（越秀区）</div>
+                <div style="font-size:12px;color:var(--text-secondary);margin-top:2px;">户号: 0201****5678</div>
+              </div>
+              <span class="tag tag-success">余额¥312.00</span>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:12px;">
+          <span style="color:var(--primary);font-size:13px;cursor:pointer;">+ 添加户号</span>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="card">
+        <div class="grid-menu">
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#e3f2fd;">📋</div>
+            <span class="label">办电进度</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#e8f5e9;">📄</div>
+            <span class="label">我的发票</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#fff3e0;">⭐</div>
+            <span class="label">我的收藏</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#f3e5f5;">🎫</div>
+            <span class="label">我的卡券</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Messages -->
+      <div class="card">
+        <div class="card-title">消息通知 <span class="tag tag-danger" style="font-size:10px;padding:1px 6px;">3</span></div>
+        <div class="list-item" style="margin:-16px;border-radius:0;">
+          <div class="item-icon" style="background:#e8f5e9;">📢</div>
+          <div class="item-content">
+            <div class="item-title">停电通知</div>
+            <div class="item-desc">您所在区域4月15日有计划停电</div>
+          </div>
+          <span class="text-xs text-muted">2小时前</span>
+        </div>
+        <div class="list-item" style="margin:-16px;border-radius:0;">
+          <div class="item-icon" style="background:#fff3e0;">💰</div>
+          <div class="item-content">
+            <div class="item-title">缴费成功</div>
+            <div class="item-desc">已成功缴纳电费¥200.00</div>
+          </div>
+          <span class="text-xs text-muted">昨天</span>
+        </div>
+        <div class="list-item" style="margin:-16px;margin-bottom:-16px;border-radius:0 0 12px 12px;">
+          <div class="item-icon" style="background:#e3f2fd;">🎉</div>
+          <div class="item-content">
+            <div class="item-title">优惠活动</div>
+            <div class="item-desc">微信缴电费满200减5元</div>
+          </div>
+          <span class="text-xs text-muted">3天前</span>
+        </div>
+      </div>
+
+      <!-- Menu List -->
+      <div class="card" style="padding:0;">
+        <div class="list-item" style="margin:0;">
+          <div class="item-icon" style="background:#e0f7fa;">💬</div>
+          <div class="item-content">
+            <div class="item-title">在线客服</div>
+            <div class="item-desc">智能客服7×24小时在线</div>
+          </div>
+          <span class="item-arrow">›</span>
+        </div>
+        <div class="list-item" style="margin:0;">
+          <div class="item-icon" style="background:#f1f8e9;">❓</div>
+          <div class="item-content">
+            <div class="item-title">帮助中心</div>
+            <div class="item-desc">常见问题、使用指南</div>
+          </div>
+          <span class="item-arrow">›</span>
+        </div>
+        <div class="list-item" style="margin:0;">
+          <div class="item-icon" style="background:#fce4ec;">📝</div>
+          <div class="item-content">
+            <div class="item-title">意见反馈</div>
+            <div class="item-desc">提交问题和建议</div>
+          </div>
+          <span class="item-arrow">›</span>
+        </div>
+        <div class="list-item" style="margin:0;">
+          <div class="item-icon" style="background:#f3e5f5;">🔒</div>
+          <div class="item-content">
+            <div class="item-title">安全中心</div>
+            <div class="item-desc">密码、设备管理</div>
+          </div>
+          <span class="item-arrow">›</span>
+        </div>
+        <div class="list-item" style="margin:0;">
+          <div class="item-icon" style="background:#fff8e1;">ℹ️</div>
+          <div class="item-content">
+            <div class="item-title">关于我们</div>
+            <div class="item-desc">版本 v4.3.149 · 服务协议</div>
+          </div>
+          <span class="item-arrow">›</span>
+        </div>
+      </div>
+
+      <div style="height:20px;"></div>
+    </div>
+
+    <div class="tab-bar">
+      <div class="tab-item"><div class="tab-icon">🏠</div><span>首页</span></div>
+      <div class="tab-item"><div class="tab-icon">⚡</div><span>服务</span></div>
+      <div class="tab-item"><div class="tab-icon">🎁</div><span>增值</span></div>
+      <div class="tab-item"><div class="tab-icon">💬</div><span>消息</span></div>
+      <div class="tab-item active"><div class="tab-icon">👤</div><span>我的</span></div>
+    </div>
+  </div>
+</body>
+</html>
