@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>业务办理 — 南网在线</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="phone-frame">
+    <div class="status-bar"><span>9:41</span><span>⚡ 📶 📡</span></div>
+
+    <div class="nav-bar">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="font-size:20px;cursor:pointer;">←</span>
+        <h1>业务办理</h1>
+      </div>
+    </div>
+
+    <div class="phone-content">
+      <!-- Tab Selector -->
+      <div style="display:flex;background:white;padding:12px 16px;gap:0;border-bottom:1px solid var(--border);">
+        <div style="flex:1;text-align:center;padding:10px;font-weight:600;color:var(--primary);border-bottom:2px solid var(--primary);">用电报装</div>
+        <div style="flex:1;text-align:center;padding:10px;color:var(--text-secondary);">用电变更</div>
+        <div style="flex:1;text-align:center;padding:10px;color:var(--text-secondary);">办理进度</div>
+      </div>
+
+      <!-- Service Types -->
+      <div class="card">
+        <div class="card-title">报装类型</div>
+        <div class="grid-menu" style="grid-template-columns:repeat(3,1fr);">
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#e3f2fd;width:56px;height:56px;">🏠</div>
+            <span class="label" style="font-weight:500;">低压报装</span>
+            <span class="text-xs text-muted">居民用电</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#fff3e0;width:56px;height:56px;">🏭</div>
+            <span class="label" style="font-weight:500;">高压报装</span>
+            <span class="text-xs text-muted">企业/工业</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#e8f5e9;width:56px;height:56px;">🔌</div>
+            <span class="label" style="font-weight:500;">充电桩</span>
+            <span class="text-xs text-muted">电动汽车</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#f3e5f5;width:56px;height:56px;">🔗</div>
+            <span class="label" style="font-weight:500;">直驳用电</span>
+            <span class="text-xs text-muted">临时用电</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#fce4ec;width:56px;height:56px;">📦</div>
+            <span class="label" style="font-weight:500;">批量报装</span>
+            <span class="text-xs text-muted">多户办理</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#e0f7fa;width:56px;height:56px;">🏗️</div>
+            <span class="label" style="font-weight:500;">统建报装</span>
+            <span class="text-xs text-muted">小区/楼盘</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Application Form Preview -->
+      <div class="card">
+        <div class="card-title">低压报装申请</div>
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <div>
+            <label style="font-size:13px;color:var(--text-secondary);display:block;margin-bottom:6px;">用电地址</label>
+            <div style="padding:10px 12px;background:#f5f6fa;border-radius:8px;font-size:14px;border:1px solid var(--border);">
+              请选择或输入用电地址 📍
+            </div>
+          </div>
+          <div>
+            <label style="font-size:13px;color:var(--text-secondary);display:block;margin-bottom:6px;">申请容量</label>
+            <div style="display:flex;gap:8px;">
+              <div style="flex:1;padding:10px;text-align:center;background:var(--primary-light);color:var(--primary);border-radius:8px;font-weight:600;border:1px solid var(--primary);cursor:pointer;">8kW</div>
+              <div style="flex:1;padding:10px;text-align:center;background:#f5f6fa;border-radius:8px;cursor:pointer;border:1px solid var(--border);">12kW</div>
+              <div style="flex:1;padding:10px;text-align:center;background:#f5f6fa;border-radius:8px;cursor:pointer;border:1px solid var(--border);">16kW</div>
+              <div style="flex:1;padding:10px;text-align:center;background:#f5f6fa;border-radius:8px;cursor:pointer;border:1px solid var(--border);">自定义</div>
+            </div>
+          </div>
+          <div>
+            <label style="font-size:13px;color:var(--text-secondary);display:block;margin-bottom:6px;">联系方式</label>
+            <div style="padding:10px 12px;background:#f5f6fa;border-radius:8px;font-size:14px;border:1px solid var(--border);">
+              请输入联系电话
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Materials Upload -->
+      <div class="card">
+        <div class="card-title">资料上传 <span class="tag tag-primary">支持刷脸免证件</span></div>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:12px;background:#f5f6fa;border-radius:8px;">
+            <div class="flex gap-sm" style="align-items:center;">
+              <span style="font-size:20px;">🪪</span>
+              <div>
+                <div style="font-size:14px;font-weight:500;">身份证</div>
+                <div class="text-xs text-muted">正反面照片</div>
+              </div>
+            </div>
+            <span class="tag tag-success">已上传</span>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:12px;background:#f5f6fa;border-radius:8px;">
+            <div class="flex gap-sm" style="align-items:center;">
+              <span style="font-size:20px;">🏠</span>
+              <div>
+                <div style="font-size:14px;font-weight:500;">产权证明</div>
+                <div class="text-xs text-muted">房产证或租赁合同</div>
+              </div>
+            </div>
+            <span class="tag tag-warning">待上传</span>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:12px;background:#f5f6fa;border-radius:8px;">
+            <div class="flex gap-sm" style="align-items:center;">
+              <span style="font-size:20px;">📸</span>
+              <div>
+                <div style="font-size:14px;font-weight:500;">现场照片</div>
+                <div class="text-xs text-muted">用电位置照片</div>
+              </div>
+            </div>
+            <span class="tag tag-warning">待上传</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Steps -->
+      <div class="card">
+        <div class="card-title">办理流程</div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-dot done">✓</div>
+            <div class="step-line"></div>
+            <div class="step-content">
+              <div class="step-title">提交申请</div>
+              <div class="step-desc">在线填写报装申请表</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-dot active">2</div>
+            <div class="step-line"></div>
+            <div class="step-content">
+              <div class="step-title">资料审核</div>
+              <div class="step-desc">工作人员审核申请材料</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-dot pending">3</div>
+            <div class="step-line"></div>
+            <div class="step-content">
+              <div class="step-title">现场勘查</div>
+              <div class="step-desc">预约勘查、制定方案</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-dot pending">4</div>
+            <div class="step-line"></div>
+            <div class="step-content">
+              <div class="step-title">装表接电</div>
+              <div class="step-desc">安装电表、接通电源</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-dot pending">5</div>
+            <div class="step-content">
+              <div class="step-title">完成</div>
+              <div class="step-desc">用电业务办理完成</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding:16px;">
+        <button class="btn btn-primary btn-block" style="padding:14px;">提交报装申请</button>
+      </div>
+
+      <div style="height:20px;"></div>
+    </div>
+
+    <div class="tab-bar">
+      <div class="tab-item"><div class="tab-icon">🏠</div><span>首页</span></div>
+      <div class="tab-item active"><div class="tab-icon">⚡</div><span>服务</span></div>
+      <div class="tab-item"><div class="tab-icon">🎁</div><span>增值</span></div>
+      <div class="tab-item"><div class="tab-icon">💬</div><span>消息</span></div>
+      <div class="tab-item"><div class="tab-icon">👤</div><span>我的</span></div>
+    </div>
+  </div>
+</body>
+</html>
