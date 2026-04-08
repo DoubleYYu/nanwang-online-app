@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>南网在线 APP — 原型导航</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    body { background: #f0f2f5; }
+    .header {
+      text-align: center;
+      padding: 40px 20px 20px;
+      background: linear-gradient(135deg, #1a6dff, #0052cc);
+      color: white;
+    }
+    .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+    .header p { font-size: 14px; opacity: 0.8; }
+    .page-grid { padding: 24px; max-width: 900px; margin: 0 auto; }
+    .page-grid .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+    .page-card {
+      background: white; border-radius: 16px; padding: 28px 20px;
+      text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      cursor: pointer; transition: all 0.3s; text-decoration: none; color: #1d2129;
+      display: block;
+    }
+    .page-card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
+    .page-card .emoji { font-size: 40px; margin-bottom: 12px; display: block; }
+    .page-card .name { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
+    .page-card .desc { font-size: 12px; color: #86909c; }
+    .footer { text-align: center; padding: 24px; color: #86909c; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>⚡ 南网在线 APP</h1>
+    <p>功能架构 · 原型展示 · 应用设计</p>
+  </div>
+
+  <div class="page-grid">
+    <div class="grid">
+      <a class="page-card" href="home.html">
+        <span class="emoji">🏠</span>
+        <div class="name">首页</div>
+        <div class="desc">核心功能入口、公告、快捷服务</div>
+      </a>
+      <a class="page-card" href="billing.html">
+        <span class="emoji">💰</span>
+        <div class="name">电费服务</div>
+        <div class="desc">电费查询、缴费、账单、发票</div>
+      </a>
+      <a class="page-card" href="service.html">
+        <span class="emoji">📋</span>
+        <div class="name">业务办理</div>
+        <div class="desc">用电报装、变更、过户</div>
+      </a>
+      <a class="page-card" href="repair.html">
+        <span class="emoji">🔧</span>
+        <div class="name">故障报修</div>
+        <div class="desc">一键报修、进度追踪、评价</div>
+      </a>
+      <a class="page-card" href="outage.html">
+        <span class="emoji">🔌</span>
+        <div class="name">停电信息</div>
+        <div class="desc">计划停电、故障停电、抢修进度</div>
+      </a>
+      <a class="page-card" href="value-added.html">
+        <span class="emoji">🎁</span>
+        <div class="name">增值服务</div>
+        <div class="desc">保险、商城、EV充电、光伏</div>
+      </a>
+      <a class="page-card" href="profile.html">
+        <span class="emoji">👤</span>
+        <div class="name">个人中心</div>
+        <div class="desc">户号管理、认证、消息、设置</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>📐 所有原型为高保真交互设计，点击卡片查看详细页面</p>
+    <p style="margin-top:4px">南网在线 APP 功能架构设计项目 · 2026</p>
+  </div>
+</body>
+</html>
