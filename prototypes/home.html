@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页 — 南网在线</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="phone-frame">
+    <div class="status-bar">
+      <span>9:41</span>
+      <span>⚡ 📶 📡</span>
+    </div>
+
+    <div class="phone-content">
+      <!-- Location Bar -->
+      <div style="background:white;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;font-size:13px;">
+        <div class="flex gap-sm" style="align-items:center">
+          <span>📍</span>
+          <span style="font-weight:600">广州市 · 天河区</span>
+          <span style="color:var(--text-secondary)">▼</span>
+        </div>
+        <div class="flex gap-md" style="font-size:18px;">
+          <span style="cursor:pointer">🔔</span>
+          <span style="cursor:pointer">💬</span>
+        </div>
+      </div>
+
+      <!-- Banner -->
+      <div class="banner" style="background:linear-gradient(135deg, #1a6dff 0%, #00c6ff 100%);">
+        <div>
+          <h2>智能用电 便捷生活</h2>
+          <p>刷脸办电 · 零证办电 · 一站服务</p>
+          <div class="btn" style="margin-top:12px;font-size:12px;padding:6px 16px;">立即体验 →</div>
+        </div>
+        <div class="decoration"></div>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="card" style="margin-top:-20px;position:relative;z-index:1;">
+        <div class="device-info">
+          <div class="info-item">
+            <div class="value">¥186.50</div>
+            <div class="label">当前电费余额</div>
+          </div>
+          <div class="info-item">
+            <div class="value">247°</div>
+            <div class="label">本月用电量</div>
+          </div>
+          <div class="info-item">
+            <div class="value">12天</div>
+            <div class="label">距下次出账</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:12px;">
+          <button class="btn btn-primary btn-block" style="flex:1;">⚡ 立即缴费</button>
+          <button class="btn btn-outline btn-block" style="flex:1;">📊 用电分析</button>
+        </div>
+      </div>
+
+      <!-- Main Menu -->
+      <div class="card">
+        <div class="card-title">常用服务</div>
+        <div class="grid-menu">
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#e8f5e9;">💰</div>
+            <span class="label">电费查缴</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#e3f2fd;">📋</div>
+            <span class="label">用电报装</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#fff3e0;">🔧</div>
+            <span class="label">故障报修</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#fce4ec;">🔌</div>
+            <span class="label">停电查询</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#f3e5f5;">📝</div>
+            <span class="label">业务变更</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#e0f7fa;">📄</div>
+            <span class="label">电子发票</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#fff8e1;">📅</div>
+            <span class="label">用电日历</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#efebe9;">📍</div>
+            <span class="label">营业网点</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- More Services -->
+      <div class="card">
+        <div class="card-title">增值服务 <span class="more">全部 ›</span></div>
+        <div class="grid-menu" style="grid-template-columns:repeat(5,1fr);">
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#e8f5e9;font-size:20px;">🛡️</div>
+            <span class="label">保险超市</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#fff3e0;font-size:20px;">🛒</div>
+            <span class="label">扶贫商城</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#e3f2fd;font-size:20px;">🚗</div>
+            <span class="label">电动汽车</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#fce4ec;font-size:20px;">🍳</div>
+            <span class="label">电气厨房</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#f1f8e9;font-size:20px;">☀️</div>
+            <span class="label">光伏管家</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Announcements -->
+      <div class="card">
+        <div class="card-title">公告通知 <span class="more">更多 ›</span></div>
+        <div class="list-item" style="margin:-16px;margin-bottom:0;border-radius:0;">
+          <div class="item-icon" style="background:#fff3e0;">📢</div>
+          <div class="item-content">
+            <div class="item-title">4月15日计划停电通知</div>
+            <div class="item-desc">天河区部分区域计划停电检修，预计恢复时间18:00</div>
+          </div>
+          <span class="tag tag-warning">通知</span>
+        </div>
+        <div class="list-item" style="margin:-16px;margin-bottom:-16px;margin-top:0;border-radius:0 0 12px 12px;">
+          <div class="item-icon" style="background:#e8f5e9;">🎉</div>
+          <div class="item-content">
+            <div class="item-title">缴电费享优惠 最高立减50元</div>
+            <div class="item-desc">微信支付缴电费满200减5，限前10万名</div>
+          </div>
+          <span class="tag tag-success">活动</span>
+        </div>
+      </div>
+
+      <!-- Power Outage Alert -->
+      <div class="card" style="background:linear-gradient(135deg, #fff5f5, #fff0f0);border:1px solid #ffccc7;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+          <span style="font-size:18px;">⚠️</span>
+          <span style="font-weight:600;color:#cf1322;">停电提醒</span>
+        </div>
+        <p style="font-size:13px;color:#86909c;">
+          您所在区域（天河区XX路）计划于 4月15日 09:00-18:00 进行线路检修，届时将暂停供电。给您带来不便，敬请谅解。
+        </p>
+        <div style="margin-top:12px;display:flex;gap:8px;">
+          <span class="tag tag-danger">计划停电</span>
+          <span class="tag tag-primary">查看详情</span>
+        </div>
+      </div>
+
+      <div style="height:20px;"></div>
+    </div>
+
+    <!-- Tab Bar -->
+    <div class="tab-bar">
+      <div class="tab-item active">
+        <div class="tab-icon">🏠</div>
+        <span>首页</span>
+      </div>
+      <div class="tab-item">
+        <div class="tab-icon">⚡</div>
+        <span>服务</span>
+      </div>
+      <div class="tab-item">
+        <div class="tab-icon">🎁</div>
+        <span>增值</span>
+      </div>
+      <div class="tab-item">
+        <div class="tab-icon">💬</div>
+        <span>消息</span>
+      </div>
+      <div class="tab-item">
+        <div class="tab-icon">👤</div>
+        <span>我的</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
