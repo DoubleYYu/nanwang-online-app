@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>电费服务 — 南网在线</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="phone-frame">
+    <div class="status-bar"><span>9:41</span><span>⚡ 📶 📡</span></div>
+
+    <div class="nav-bar" style="display:flex;align-items:center;justify-content:space-between;">
+      <div>
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span style="font-size:20px;cursor:pointer;">←</span>
+          <h1 style="font-size:18px;">电费服务</h1>
+        </div>
+        <div class="subtitle" style="margin-top:4px;">户号: 0201****8765 · 广州市</div>
+      </div>
+      <div style="font-size:20px;cursor:pointer;">⋯</div>
+    </div>
+
+    <div class="phone-content">
+      <!-- Billing Card -->
+      <div class="billing-card" style="background:linear-gradient(135deg, #1a6dff 0%, #4d88ff 100%);">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+          <div>
+            <div class="label">当前电费余额</div>
+            <div class="amount">¥186.50</div>
+            <div class="label">上次缴费: 2026-03-28 · ¥200.00</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.15);padding:6px 12px;border-radius:20px;font-size:12px;">
+            户号切换 ▾
+          </div>
+        </div>
+        <div class="actions">
+          <button class="btn" style="flex:1;">💰 立即缴费</button>
+          <button class="btn" style="flex:1;">📊 余额预警</button>
+          <button class="btn" style="flex:1;">📋 账单明细</button>
+        </div>
+      </div>
+
+      <!-- Quick Functions -->
+      <div class="card">
+        <div class="grid-menu">
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#e3f2fd;">💳</div>
+            <span class="label">在线缴费</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#e8f5e9;">📄</div>
+            <span class="label">电子发票</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#fff3e0;">📅</div>
+            <span class="label">用电日历</span>
+          </div>
+          <div class="grid-item">
+            <div class="icon-wrapper" style="background:#f3e5f5;">🏦</div>
+            <span class="label">电费代扣</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- This Month Usage -->
+      <div class="card">
+        <div class="card-title">本月用电概况</div>
+        <div class="device-info">
+          <div class="info-item">
+            <div class="value">247°</div>
+            <div class="label">本月用电量</div>
+          </div>
+          <div class="info-item">
+            <div class="value">¥145.80</div>
+            <div class="label">本月电费</div>
+          </div>
+          <div class="info-item">
+            <div class="value">↓12%</div>
+            <div class="label">同比上月</div>
+          </div>
+        </div>
+        <!-- Chart Area -->
+        <div class="chart-placeholder" style="margin-top:12px;height:120px;background:linear-gradient(0deg, #e8f5e9 0%, transparent 100%);position:relative;overflow:hidden;">
+          <svg viewBox="0 0 300 100" style="width:100%;height:100%;position:absolute;top:0;left:0;">
+            <polyline fill="none" stroke="#1a6dff" stroke-width="2.5" points="10,80 40,70 70,60 100,50 130,55 160,40 190,35 220,30 250,25 280,20" />
+            <polyline fill="url(#grad)" stroke="none" points="10,80 40,70 70,60 100,50 130,55 160,40 190,35 220,30 250,25 280,20 280,100 10,100" opacity="0.2"/>
+            <defs><linearGradient id="grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a6dff"/><stop offset="100%" stop-color="#1a6dff" stop-opacity="0"/></linearGradient></defs>
+          </svg>
+        </div>
+        <div style="display:flex;justify-content:space-between;margin-top:8px;font-size:11px;color:var(--text-secondary);">
+          <span>3/1</span><span>3/7</span><span>3/14</span><span>3/21</span><span>3/28</span><span>今日</span>
+        </div>
+      </div>
+
+      <!-- Billing History -->
+      <div class="card">
+        <div class="card-title">历史账单 <span class="more">全部 ›</span></div>
+        <div class="list-item" style="margin:-16px;border-radius:0;">
+          <div class="item-icon" style="background:#e3f2fd;">📋</div>
+          <div class="item-content">
+            <div class="item-title">2026年3月账单</div>
+            <div class="item-desc">用电量 247° · 第二阶梯</div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-weight:600;color:var(--primary);">¥145.80</div>
+            <div class="tag tag-success" style="margin-top:4px;">已缴清</div>
+          </div>
+        </div>
+        <div class="list-item" style="margin:-16px;border-radius:0;">
+          <div class="item-icon" style="background:#e3f2fd;">📋</div>
+          <div class="item-content">
+            <div class="item-title">2026年2月账单</div>
+            <div class="item-desc">用电量 312° · 第二阶梯</div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-weight:600;color:var(--primary);">¥189.60</div>
+            <div class="tag tag-success" style="margin-top:4px;">已缴清</div>
+          </div>
+        </div>
+        <div class="list-item" style="margin:-16px;margin-bottom:-16px;border-radius:0 0 12px 12px;">
+          <div class="item-icon" style="background:#e3f2fd;">📋</div>
+          <div class="item-content">
+            <div class="item-title">2026年1月账单</div>
+            <div class="item-desc">用电量 398° · 第三阶梯</div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-weight:600;color:var(--primary);">¥268.70</div>
+            <div class="tag tag-success" style="margin-top:4px;">已缴清</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payment Methods -->
+      <div class="card">
+        <div class="card-title">缴费方式</div>
+        <div style="display:flex;gap:12px;">
+          <div style="flex:1;text-align:center;padding:12px;background:#f5f6fa;border-radius:10px;cursor:pointer;">
+            <div style="font-size:28px;margin-bottom:4px;">💚</div>
+            <div style="font-size:12px;font-weight:500;">微信支付</div>
+          </div>
+          <div style="flex:1;text-align:center;padding:12px;background:#f5f6fa;border-radius:10px;cursor:pointer;">
+            <div style="font-size:28px;margin-bottom:4px;">🔵</div>
+            <div style="font-size:12px;font-weight:500;">支付宝</div>
+          </div>
+          <div style="flex:1;text-align:center;padding:12px;background:#f5f6fa;border-radius:10px;cursor:pointer;">
+            <div style="font-size:28px;margin-bottom:4px;">🏦</div>
+            <div style="font-size:12px;font-weight:500;">银联支付</div>
+          </div>
+          <div style="flex:1;text-align:center;padding:12px;background:#f5f6fa;border-radius:10px;cursor:pointer;">
+            <div style="font-size:28px;margin-bottom:4px;">🔄</div>
+            <div style="font-size:12px;font-weight:500;">自动代扣</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="height:20px;"></div>
+    </div>
+
+    <div class="tab-bar">
+      <div class="tab-item"><div class="tab-icon">🏠</div><span>首页</span></div>
+      <div class="tab-item active"><div class="tab-icon">⚡</div><span>服务</span></div>
+      <div class="tab-item"><div class="tab-icon">🎁</div><span>增值</span></div>
+      <div class="tab-item"><div class="tab-icon">💬</div><span>消息</span></div>
+      <div class="tab-item"><div class="tab-icon">👤</div><span>我的</span></div>
+    </div>
+  </div>
+</body>
+</html>
