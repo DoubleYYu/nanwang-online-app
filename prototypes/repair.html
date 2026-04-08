@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>故障报修 — 南网在线</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="phone-frame">
+    <div class="status-bar"><span>9:41</span><span>⚡ 📶 📡</span></div>
+
+    <div class="nav-bar">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="font-size:20px;cursor:pointer;">←</span>
+        <h1>故障报修</h1>
+      </div>
+    </div>
+
+    <div class="phone-content">
+      <!-- Emergency Button -->
+      <div style="text-align:center;padding:24px 16px;">
+        <div style="width:140px;height:140px;border-radius:50%;background:linear-gradient(135deg, #ff6b6b, #ee5a24);margin:0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;color:white;box-shadow:0 8px 32px rgba(238,90,36,0.4);cursor:pointer;transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          <span style="font-size:40px;">🔧</span>
+          <span style="font-size:16px;font-weight:600;margin-top:4px;">一键报修</span>
+        </div>
+        <p style="margin-top:12px;font-size:13px;color:var(--text-secondary);">点击按钮快速提交故障报修</p>
+      </div>
+
+      <!-- Fault Type Selection -->
+      <div class="card">
+        <div class="card-title">选择故障类型</div>
+        <div class="grid-menu" style="grid-template-columns:repeat(3,1fr);">
+          <div style="padding:16px 8px;text-align:center;background:#fff5f5;border-radius:10px;cursor:pointer;border:2px solid transparent;" onclick="this.style.borderColor='#ff4d4f'">
+            <div style="font-size:28px;">⚡</div>
+            <div style="font-size:13px;font-weight:500;margin-top:6px;">停电</div>
+          </div>
+          <div style="padding:16px 8px;text-align:center;background:#fff8e8;border-radius:10px;cursor:pointer;border:2px solid transparent;" onclick="this.style.borderColor='#ff9c00'">
+            <div style="font-size:28px;">🔄</div>
+            <div style="font-size:13px;font-weight:500;margin-top:6px;">跳闸</div>
+          </div>
+          <div style="padding:16px 8px;text-align:center;background:#fff5f5;border-radius:10px;cursor:pointer;border:2px solid transparent;" onclick="this.style.borderColor='#ff4d4f'">
+            <div style="font-size:28px;">⚠️</div>
+            <div style="font-size:13px;font-weight:500;margin-top:6px;">漏电</div>
+          </div>
+          <div style="padding:16px 8px;text-align:center;background:#fff8e8;border-radius:10px;cursor:pointer;border:2px solid transparent;">
+            <div style="font-size:28px;">💡</div>
+            <div style="font-size:13px;font-weight:500;margin-top:6px;">电压不稳</div>
+          </div>
+          <div style="padding:16px 8px;text-align:center;background:#f5f6fa;border-radius:10px;cursor:pointer;border:2px solid transparent;">
+            <div style="font-size:28px;">🔥</div>
+            <div style="font-size:13px;font-weight:500;margin-top:6px;">线路发热</div>
+          </div>
+          <div style="padding:16px 8px;text-align:center;background:#f5f6fa;border-radius:10px;cursor:pointer;border:2px solid transparent;">
+            <div style="font-size:28px;">❓</div>
+            <div style="font-size:13px;font-weight:500;margin-top:6px;">其他</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fault Description -->
+      <div class="card">
+        <div class="card-title">故障描述</div>
+        <div style="padding:12px;background:#f5f6fa;border-radius:8px;min-height:80px;font-size:14px;color:var(--text-placeholder);border:1px solid var(--border);">
+          请描述故障现象，如：全屋停电、某个房间跳闸...
+        </div>
+        <div style="display:flex;gap:8px;margin-top:12px;">
+          <div style="padding:8px 16px;background:#f5f6fa;border-radius:8px;font-size:13px;cursor:pointer;display:flex;align-items:center;gap:4px;">
+            📸 拍照
+          </div>
+          <div style="padding:8px 16px;background:#f5f6fa;border-radius:8px;font-size:13px;cursor:pointer;display:flex;align-items:center;gap:4px;">
+            🎤 语音
+          </div>
+          <div style="padding:8px 16px;background:#f5f6fa;border-radius:8px;font-size:13px;cursor:pointer;display:flex;align-items:center;gap:4px;">
+            📍 定位
+          </div>
+        </div>
+      </div>
+
+      <!-- Active Repair Order -->
+      <div class="card" style="border-left:4px solid var(--primary);">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+          <span style="font-weight:600;">当前报修单</span>
+          <span class="tag tag-primary">维修中</span>
+        </div>
+        <div style="font-size:13px;color:var(--text-secondary);margin-bottom:8px;">
+          报修单号: GD2026040800123
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+          <span style="font-size:13px;">故障类型: 全屋停电</span>
+        </div>
+
+        <!-- Progress -->
+        <div class="steps" style="padding:0;">
+          <div class="step">
+            <div class="step-dot done">✓</div>
+            <div class="step-line"></div>
+            <div class="step-content">
+              <div class="step-title">已报修</div>
+              <div class="step-desc">04-08 14:23</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-dot done">✓</div>
+            <div class="step-line"></div>
+            <div class="step-content">
+              <div class="step-title">已派工</div>
+              <div class="step-desc">04-08 14:30 · 张师傅</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-dot active">→</div>
+            <div class="step-line"></div>
+            <div class="step-content">
+              <div class="step-title">维修中</div>
+              <div class="step-desc">预计15:30完成 · 正在处理</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-dot pending">○</div>
+            <div class="step-content">
+              <div class="step-title">维修完成</div>
+              <div class="step-desc">等待确认</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:8px;margin-top:12px;">
+          <button class="btn btn-outline" style="flex:1;font-size:13px;">📍 查看位置</button>
+          <button class="btn btn-outline" style="flex:1;font-size:13px;">📞 联系师傅</button>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="card">
+        <div class="card-title">常见问题</div>
+        <div class="list-item" style="margin:-16px;border-radius:0;">
+          <div class="item-icon" style="background:#fff3e0;">💡</div>
+          <div class="item-content">
+            <div class="item-title">家里突然停电怎么办？</div>
+            <div class="item-desc">先检查是否欠费、空气开关是否跳闸</div>
+          </div>
+          <span class="item-arrow">›</span>
+        </div>
+        <div class="list-item" style="margin:-16px;border-radius:0;">
+          <div class="item-icon" style="background:#e3f2fd;">🔄</div>
+          <div class="item-content">
+            <div class="item-title">频繁跳闸的原因</div>
+            <div class="item-desc">可能是过载、短路或漏电保护器故障</div>
+          </div>
+          <span class="item-arrow">›</span>
+        </div>
+        <div class="list-item" style="margin:-16px;margin-bottom:-16px;border-radius:0 0 12px 12px;">
+          <div class="item-icon" style="background:#e8f5e9;">⚡</div>
+          <div class="item-content">
+            <div class="item-title">电压不稳定如何处理</div>
+            <div class="item-desc">建议安装稳压器并联系电力公司检测</div>
+          </div>
+          <span class="item-arrow">›</span>
+        </div>
+      </div>
+
+      <div style="height:20px;"></div>
+    </div>
+
+    <div class="tab-bar">
+      <div class="tab-item"><div class="tab-icon">🏠</div><span>首页</span></div>
+      <div class="tab-item active"><div class="tab-icon">⚡</div><span>服务</span></div>
+      <div class="tab-item"><div class="tab-icon">🎁</div><span>增值</span></div>
+      <div class="tab-item"><div class="tab-icon">💬</div><span>消息</span></div>
+      <div class="tab-item"><div class="tab-icon">👤</div><span>我的</span></div>
+    </div>
+  </div>
+</body>
+</html>
